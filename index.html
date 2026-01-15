@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AstroGid Faet - Астрономический портал</title>
+  <meta name="description" content="AstroGid Faet - современный сайт для любителей астрономии и астрофотографии. Образовательные материалы, новости космоса, сообщество астрономов." />
+  <meta name="keywords" content="астрономия, астрофотография, космос, звезды, планеты, телескоп, наблюдения" />
+  <meta name="author" content="AstroGid Faet Team" />
+  
+  <!-- Open Graph для социальных сетей -->
+  <meta property="og:title" content="AstroGid Faet - Астрономический портал" />
+  <meta property="og:description" content="Присоединяйтесь к сообществу любителей астрономии. Изучайте космос, делитесь астрофото, читайте новости науки." />
+  <meta property="og:type" content="website" />
+  
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <div class="AstroGid" onclick="returnToMain()">AstroGid Faet</div>
+    <nav>
+      <ul>
+        <li><a href="#hero">Главная</a></li>
+        <li><a href="#about-site">О сайте</a></li>
+        <li><a href="#faq">Вопросы</a></li>
+        <li><a href="#contact">Контакты</a></li>
+        <li><a href="#guest-mode" class="guest-btn" onclick="enterAsGuest()">Гость</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="hero" id="hero">
+    <div class="circle">
+      <h1>AstroGid Faet</h1>
+      <p>
+        Открытие новых объектов, астрофото,<br />
+        исследования, научные открытия и сама жизнь<br />
+        способны увлечь любителей астрономии.
+      </p>
+      <!-- кнопка ведет на раздел "О сайте" -->
+      <a href="#about-site" class="btn">ЧИТАТЬ ДАЛЕЕ</a>
+    </div>
+  </main>
+
+  <section class="stars-section">
+    <div class="stars-text">
+      <h1>Вся информация в одном месте</h1>
+      <h3>
+        Присоединись к исследованию космоса и открой для себя мир,
+        в котором наука, открытия и мечты о звёздах соединяются воедино
+      </h3>
+    </div>
+
+    <div class="stars-gallery">
+      <figure>
+        <img src="images/82151757866745.jpg" alt="Звезда 1">
+        <figcaption>Астрономия и новости сферы</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/ngc2024.jpg" alt="Звезда 2">
+        <figcaption>Астрофото</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/ПАКМАН.jpg" alt="Звезда 3">
+        <figcaption>Общение и обмен мыслями</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/м27.jpg" alt="Звезда 4">
+        <figcaption>Обсуждение и продажа оборудования</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/КОЛДУН.jpg" alt="Звезда 5">
+        <figcaption>Ответы на вопросы</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/М20.jpg" alt="Звезда 6">
+        <figcaption>Обучение</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="info-slide">
+    <div class="info-grid">
+
+      <div class="info-card">
+        <div class="info-img">
+          <img src="images/ЛАГУНА.jpg" alt="Обсерватории">
+        </div>
+        <h3>​Планеты и звёзды</h3>
+        <div class="line"></div>
+        <p>
+         ​Узнай, как устроена Солнечная система, чем отличаются планеты и почему звёзды являются основой Вселенной
+        </p>
+      </div>
+
+      <div class="info-card">
+        <div class="info-img">
+          <img src="images/м101.png" alt="Астрономические явления">
+        </div>
+        <h3>​Галактики и Вселенная</h3>
+        <div class="line"></div>
+        <p>
+          Исследуй далёкие галактики, туманности и масштабные структуры, формирующие облик космоса
+        </p>
+      </div>
+
+      <div class="info-card">
+        <div class="info-img">
+          <img src="images/М51.png" alt="Открытия и технологии">
+        </div>
+        <h3>Астрофотография</h3>
+        <div class="line"></div>
+        <p>
+          ​Познакомься с искусством съёмки ночного неба и узнай, как с помощью техники запечатлеть красоту космоса
+        </p>
+      </div>
+
+      <div class="info-card">
+        <div class="info-img">
+          <img src="images/ПОЛУМЕСЯЦ.jpg" alt="Далёкие события">
+        </div>
+        <h3>​Обучение астрономии</h3>
+        <div class="line"></div>
+        <p>
+         ​Изучай астрономию — от базовых понятий до более сложных тем и практических наблюдений
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- о сайте -->
+  <section class="about-me-section" id="about-site">
+    <div class="about-me-container">
+      <div class="about-text">
+        <h1>О сайте</h1>
+        <p class="lead-text">​Цель проекта — сделать астрономию понятной и увлекательной для каждого. Даже самые сложные явления объясняются простым и доступным языком, чтобы изучение космоса было не только полезным, но и по-настоящему интересным. Сайт подойдёт как для начинающих, так и для тех, кто уже знаком с основами астрономии и хочет расширить свои знания.
+  </p>
+        <p>Здесь ты сможешь узнать о современных открытиях, космических исследованиях и научных теориях, которые помогают человечеству всё глубже проникать в тайны Вселенной. Проект постоянно развивается и дополняется новыми материалами, чтобы каждый посетитель мог открыть для себя что-то новое и вдохновляющее.</p>
+        <p class="welcome-text">Готовы погрузиться в этот мир или стать частью его?</p>
+        <button class="readmore-btn" onclick="showRegistration()">Читать больше</button>
+      </div>
+      
+      <div class="about-photos">
+        <div class="photo-grid">
+          <div class="photo-item">
+            <img src="images/ПОЛУМЕСЯЦ.jpg" alt="Milana photo 1">
+          </div>
+          <div class="photo-item">
+            <img src="images/М51.png" alt="Milana photo 2">
+          </div>
+          <div class="photo-item">
+            <img src="images/М51.png" alt="Milana photo 3">
+          </div>
+          <div class="photo-item">
+            <img src="images/ПОЛУМЕСЯЦ.jpg" alt="Milana photo 4">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- вопросы -->
+  <section class="faq-section" id="faq">
+    <div class="faq-container">
+      <h1>Факты и вопросы</h1>
+      <p class="faq-subtitle">Сайт постепенно пополняется новыми статьями, фотографиями и образовательными материалами.</p>
+      
+      <div class="faq-divider">
+        <div class="faq-line"></div>
+      </div>
+      
+      <div class="faq-accordion">
+        <!-- в1 -->
+        <div class="faq-item">
+          <button class="faq-question">
+            <span class="question-text">Что такое астрономия и зачем её изучать?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Астрономия — это наука о небесных объектах и явлениях, происходящих за пределами Земли. Её изучение помогает понять наше место во Вселенной, расширяет кругозор и развивает критическое мышление.</p>
+          </div>
+        </div>
+        
+        <!-- в2 -->
+        <div class="faq-item">
+          <button class="faq-question">
+            <span class="question-text">Нужно ли иметь специальные знания, чтобы изучать материалы сайта?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Нет. Многие материалы адаптированы для начинающих. Сложные концепции объясняются простым языком, чтобы каждый мог понять основы астрономии без специальной подготовки.</p>
+          </div>
+        </div>
+        
+        <!-- в3 -->
+        <div class="faq-item">
+          <button class="faq-question">
+            <span class="question-text">Что такое астрофото?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Астрофотография — это съёмка объектов ночного неба: звёзд, планет, Луны и галактик и других астрономических объектов. На сайте представлены основы съёмки и примеры работ.</p>
+          </div>
+        </div>
+        
+        <!-- в4 -->
+        <div class="faq-item">
+          <button class="faq-question">
+            <span class="question-text">Подойдёт ли сайт для обучения и школьных проектов?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Да, материалы сайта идеально подходят для школьников и студентов. Здесь можно найти информацию для рефератов, проектов и углублённого изучения астрономии.</p>
+          </div>
+        </div>
+        
+        <!-- в5 -->
+        <div class="faq-item">
+          <button class="faq-question">
+            <span class="question-text">Можно ли начать изучение астрономии самостоятельно?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Конечно! Сайт создан специально для самостоятельного изучения. Мы предлагаем структурированные материалы, начиная от основ и заканчивая более сложными темами.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- контакты -->
+  <section class="contact-section" id="contact">
+    <div class="contact-container">
+      <div class="contact-info">
+        <h1>Контакты</h1>
+        
+        <div class="contact-details">
+          <div class="contact-item">
+            <h3>GMAIL</h3>
+            <p class="email">faet2782@gmail.com</p>
+          </div>
+          
+          <div class="contact-item">
+            <h3>АДРЕС</h3>
+            <p>г. Ростов-на-Дону, ул. Ректорская, д. 40</p>
+          </div>
+          
+          <button class="register-btn" onclick="showRegistration()">Регистрация</button>
+          
+          <div class="contact-note">
+            <p>С нетерпением жду встречи с вами!</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="contact-form">
+        <form id="contact-form">
+          <div class="form-group">
+            <label for="name">Имя</label>
+            <input type="text" id="name" name="name" placeholder="Введите своё имя" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Введите адрес электронной почты" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="message">Сообщение</label>
+            <textarea id="message" name="message" placeholder="Какой вопрос вас интересует?" rows="5" required></textarea>
+          </div>
+          
+          <div class="form-checkbox">
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">Я принимаю <a href="#">Условия обслуживания</a></label>
+          </div>
+          
+          <button type="submit" class="submit-btn">Отправить сообщение</button>
+        </form>
+      </div>
+    </div>
+    
+    <!-- карта -->
+    <div class="map-section">
+      <h2>Наше расположение</h2>
+      <div class="map-container">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2709.8234567890123!2d39.7015625!3d47.2357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40e3b9b9b9b9b9b9%3A0x1234567890abcdef!2z0YPQuy4g0KDQtdC60YLQvtGA0YHQutCw0Y8sIDQwLCDQoNC-0YHRgtC-0LIt0L3QsC3QlNC-0L3Rgw!5e0!3m2!1sru!2sru!4v1642000000000!5m2!1sru!2sru"
+          width="100%" 
+          height="400" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Карта расположения AstroGid Faet - Ростов-на-Дону">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- футер -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="photo-credits">
+        <p>Фото, используемые для ознакомления с сайтом, принадлежат: Мирошниченко Александр Анатольевич </p>
+      </div>
+      
+      <div class="footer-links">
+        <div class="social-links">
+          <a href="mailto:faet2782@gmail.com" class="social-link">
+            <span class="social-icon">✉️</span>
+            <span>faet2782@gmail.com</span>
+          </a>
+          <a href="https://t.me/Faet2667" class="social-link" target="_blank">
+            <span class="social-icon">📱</span>
+            <span>Telegram</span>
+          </a>
+        </div>
+        
+        <div class="copyright">
+          <p>&copy; 2026 AstroGid Faet</p>
+          <p class="footer-note">Сайт создан для любителей астрономии и астрофотографии</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- модальное окно регистрации -->
+  <div class="registration-modal" id="registration-modal">
+    <div class="modal-content">
+      <span class="close-modal" onclick="closeRegistration()">&times;</span>
+      <h2>Добро пожаловать!</h2>
+      <p class="modal-subtitle">Выберите способ доступа к материалам сайта</p>
+      
+      <!-- переключатель между входом и регистрацией -->
+      <div class="auth-tabs">
+        <button class="auth-tab active" onclick="switchAuthTab('register')">Регистрация</button>
+        <button class="auth-tab" onclick="switchAuthTab('login')">Вход</button>
+        <button class="auth-tab" onclick="switchAuthTab('guest')">Гость</button>
+      </div>
+      
+      <div class="registration-options">
+        <!-- режим гостя -->
+        <div class="option-card guest-option" onclick="enterAsGuest()">
+          <div class="option-icon">
+            <img src="images/гость.png" alt="Иконка гостя">
+          </div>
+          <h3>Режим гостя</h3>
+          <p>Просмотр статей и публикаций без регистрации. Ограниченный доступ.</p>
+          <button class="option-btn">Войти как гость</button>
+          <div class="option-features">
+            <div class="feature">✓ Чтение статей</div>
+            <div class="feature">✓ Просмотр галереи</div>
+            <div class="feature">✗ Сохранение прогресса</div>
+            <div class="feature">✗ Комментарии</div>
+          </div>
+        </div>
+        
+        <!-- Регистрация -->
+        <div class="option-card register-option">
+          <div class="option-icon">
+            <img src="images/гость.png" alt="Иконка регистрации">
+          </div>
+          <h3>Полная регистрация</h3>
+          <p>Создать аккаунт для полного доступа ко всем функциям сайта.</p>
+          <form class="register-form" id="register-form">
+            <input type="text" placeholder="Ваше имя" required>
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Пароль" required>
+            <button type="submit" class="register-submit">Зарегистрироваться</button>
+          </form>
+          <div class="option-features">
+            <div class="feature">✓ Все статьи</div>
+            <div class="feature">✓ Сохранение прогресса</div>
+            <div class="feature">✓ Комментарии</div>
+            <div class="feature">✓ Личный кабинет</div>
+          </div>
+        </div>
+        
+        <!-- вход в аккаунт -->
+        <div class="option-card login-option" style="display: none;">
+          <div class="option-icon">
+            <img src="images/гость.png" alt="Иконка входа">
+          </div>
+          <h3>Вход в аккаунт</h3>
+          <p>Войдите в существующий аккаунт для доступа ко всем функциям.</p>
+          <form class="login-form" id="login-form">
+            <input type="email" placeholder="Email" required id="login-email">
+            <input type="password" placeholder="Пароль" required id="login-password">
+            <button type="submit" class="login-submit">Войти</button>
+          </form>
+          <div class="login-help">
+            <p style="font-size: 14px; color: #9b72cb; margin-top: 15px;">
+              Нет аккаунта? <a href="#" onclick="switchAuthTab('register')" style="color: #4a8fe7;">Зарегистрируйтесь</a>
+            </p>
+          </div>
+          <div class="option-features">
+            <div class="feature">✓ Все статьи</div>
+            <div class="feature">✓ Сохранение прогресса</div>
+            <div class="feature">✓ Комментарии</div>
+            <div class="feature">✓ Личный кабинет</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
